@@ -15,6 +15,7 @@ public class Library {
     public void issueLibraryCard(Book<String> book, LibraryCard<Integer, String> card) {
         addBook(book, card);
     }
+
     public void displayIssuedBooks() {
         for (Map.Entry<Book<String>, LibraryCard<Integer, String>> entry : issuedBooks.entrySet()) {
             System.out.println("Book: " + entry.getKey().getTitle() + ", Card Number: " + entry.getValue().getCardNumber() + ", Book Info: " + entry.getValue().getBookInfo());
